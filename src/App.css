@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    padding: 5px;
+    margin: 0;
+    overflow-y: scroll;
+    /* background-color: #3d8f7c; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-text-1{
+    text-align: center;
+    color: #5c91c6;
+    font-size: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head-text-2{
+    text-align: center;
+    color: #abaaaa;
 }
 
-.App-link {
-  color: #61dafb;
+.space-20{
+    height: 20px;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.space-50{
+    height: 50px;
+    width: 100%;
+}
+
+.search-container{
+    /* margin: auto; */
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    padding: 0px;
+    position: fixed;
+    margin-left: calc(50% - 350px);
+    z-index: 10000;
+    /* background-color: red; */
+    
+    
+}
+@media screen and (max-width:700px)
+{
+    .search-container{
+        margin: 0;
+        width: 100%;
+    }
+
+}
+.search-container input{
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    color: rgb(91, 91, 91);
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 25px rgba(70, 70, 70, 0.132);
+
+}
+
+input[type=text]:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 25px rgba(23, 85, 28, 0.591);
+
+}
+
+.searchButton{
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    padding-top: 20px;
+    background-color: #3d8f7c;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 0px 25px rgba(70, 70, 70, 0.132);
+    cursor: pointer;
+    color: white;
+    
+}
+.splash-container{
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(70, 70, 70, 0.132);
+    /* padding: 20px; */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.splash-container img{
+    width: 100%;
+
+}
+.splash-text{
+    text-align: center;
+    color: #3d8f7c;
+    letter-spacing: px;
+}
+
+.result-container{
+    margin: auto;
+    box-shadow: 0px 0px 25px rgba(70, 70, 70, 0.132);
+    border-radius: 20px;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.result-city{
+    font-size: 1.3em;
+    color: rgb(99, 98, 98);
+}
+
+.result-country{
+    background-color: #3d8f7c;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    margin: 5px;
+    font-size: 0.7em;
+}
+.city-temp{
+    padding: 10px;
+    font-size: 3em;
+}
+.text-small{
+    font-size: 1em;
+}
+.report_row{
+    color: #525252;
+    font-size: 1.3em;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+}
+.report_col{
+    width: 50%;
+}
+
+.right_align{
+    text-align: right;
+}
+
+.left_align{
+    text-align: left;
+}
+
+.err_text{
+    color: red;
+    text-align: center;
 }
