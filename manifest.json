@@ -3,7 +3,7 @@
   "name": "Small light weight weather app",
   "icons": [
     {
-      "src": "https://jithinksatheesh.github.io/images/logo.png",
+      "src": "https://jithinksatheesh.github.io/weatherapp/images/logo.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "any maskable"
